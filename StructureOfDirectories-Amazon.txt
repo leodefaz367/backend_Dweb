@@ -1,0 +1,9 @@
+src/
+├── config/ --> En Amazon almacenaría las credenciales de AWS para sis servidores
+├── controllers/ --> Contiene la lógica del ngocio, cuando se suman los productos que se almacenan en el carrito
+├── helpers/ --> Funciones que calculan los costos de importación e importación.
+├── models/ --> Esquemas de los productos, vendedores y los usuarios
+├── public/ --> Logotipos de amazon, e imágenes estáticas
+├── routers/ --> Define las rutas de Amazon. /carrito
+├── viewstype/ --> Carpeta en la qie se incluiría el diseño del carrito de compras o interfaz de pasarela de pagos.
+└── server.js --> Archivo donde se levanta el server, así mismo los middlewares.
