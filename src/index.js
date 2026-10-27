@@ -110,20 +110,20 @@ app.get('/checkout',(req,res)=>{
 })
 
 // Middleware que valida solo para /pago
-app.use('/pago', (req,res,next)=>{
-    if(!req.body || Object.keys(req.body).length === 0){
-        return res.send("Usuario no registrado para finalizar compra")
-    }
-    const {email,password} = req.body
-    if (email ==="leonardo@hotmail.com" && password === "12345"){
+app.use('/pago', (req, res, next) => {
+    const { email, password } = req.body
+
+    console.log("Email:", email, email === "leonardo@hotmail.com")
+    console.log("Password:", password, password === "12345")
+
+    if (email === "leonardo@hotmail.com" && password === "12345") {
         return next()
     }
-    else{
-        return res.send("Usuario no registrado para finalizar compra")
-    }
+
+    return res.send("Usuario no registrado para finalizar compra")
 })
 
-app.get('/pago',(req,res)=>{
+app.post('/pago',(req,res)=>{
     res.send(`Pago autorizado - ${req.body.email}`)
 })
 
