@@ -1,3 +1,5 @@
+Integrantes: Anderson Estrada, Defaz Leonardo & Alexis Chasi
+
 https://backend-dweb.onrender.com/carrito/simple
 
 <img width="827" height="353" alt="Captura de pantalla 2026-10-27 114744" src="https://github.com/user-attachments/assets/f67dde97-350e-4cbd-9c7a-e5fa04627b4c" />
